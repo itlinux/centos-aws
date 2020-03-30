@@ -1,4 +1,4 @@
-vpc_id_fse   = "vpc-46246522220"    # FSE-VPC-WEST2"
+vpc_id_fse   = "vpc-4624650"    # FSE-VPC-WEST2"
 se_subnet_id = "subnet-2a4e0353" #West 2 subnet FSE
 ami-image    = "ami-a042f4d8"
 #ami-image      = "ami-17ba2e6f"

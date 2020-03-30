@@ -1,10 +1,10 @@
-= Deploy Avi Controller using Terraform
+= Deploy Two CentOS 7 using Terraform
 
-This deploys a new controller using Terraform in AWS. Within a few changes you can deploy it in Azure.
+This deploys two new CentOS VMs with Docker using Terraform in AWS.
 
 == Credentials
 
-Using AWS profile now
+Using AWS profile from your ~/.aws/credentials file
 
 
 My Example:
@@ -17,7 +17,3 @@ secret_key = "XXXXXXXXXXXXXX"
 aws_access_key_id = "XXXXXXXXXXXXXXXX"
 aws_secret_access_key = "XXXXXXXXXXXX"
 ----
-
-== Video overview
-
-* http://tiny.cc/avi-terraform
