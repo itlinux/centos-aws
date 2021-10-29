@@ -1,8 +1,8 @@
 resource "aws_security_group" "remo_sg" {
-  name = "${var.remo_sg_name}"
+  name = var.remo_sg_name
 
   description = "Allow inbound SSH traffic from my IP"
-  vpc_id      = "${var.vpc_id_fse}"
+  vpc_id      = var.vpc_id_fse
   #    name = "${var.project_name}_external" # vanilla-stage_external
 
     ingress {

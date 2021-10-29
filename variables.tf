@@ -37,3 +37,6 @@ variable "profile" {
 variable "owner" {
   description = "owner"
 }
+variable "ssh_key"{
+  description = "your ssh key to use"
+}
