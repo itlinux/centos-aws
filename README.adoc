@@ -17,3 +17,7 @@ secret_key = "XXXXXXXXXXXXXX"
 aws_access_key_id = "XXXXXXXXXXXXXXXX"
 aws_secret_access_key = "XXXXXXXXXXXX"
 ----
+
+
+== Use the terraform.tfvars.example
+This file will need to contain your info which sets the variables. Just copy it to terraform.tfvars and update the options. 
