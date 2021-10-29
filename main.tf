@@ -24,8 +24,9 @@ resource "aws_instance" "centos-7-newbox" {
       agent = "true"
     }
     inline = [
-      "sudo systemctl mask firewalld",
-      "sudo systemctl stop firewalld",
+     "sudo yum install -y yum-utils",
+     "sudo yum-config-manager  --add-repo  https://download.docker.com/linux/centos/docker-ce.repo",
+     "sudo yum install -y docker"
     ]
   }
 }
