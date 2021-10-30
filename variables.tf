@@ -40,6 +40,3 @@ variable "owner" {
 variable "ssh_key"{
   description = "your ssh key to use"
 }
-variable "p_ssh_key"{
-  description = "your p ssh key to use"
-}
