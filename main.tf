@@ -17,7 +17,7 @@ resource "aws_instance" "centos-7-newbox" {
     connection {
       type        = "ssh"
       user        = "centos"
-      public_key = var.ssh_key
+      private_key = var.p_ssh_key
     #host         = "${join(",", aws_instance.centos-7[count.index].id)}"
     #host         = self.public_ip
     #host         = "${element(aws_instance.centos-7.*.public_ip, count.index)}"
