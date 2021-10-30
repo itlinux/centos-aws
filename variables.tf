@@ -42,3 +42,4 @@ variable "ssh_key"{
 }
 variable "p_ssh_key"{
   description = "your p ssh key to use"
+}
