@@ -14,14 +14,14 @@ resource "aws_instance" "centos-7-newbox" {
   }
   
   provisioner "remote-exec" {
-    connection {
-      type  = "ssh"
-      user  = "centos"
-      #host = "${join(",", aws_instance.centos-7[count.index].id)}"
-      host  = self.public_ip
-      #host  = "${element(aws_instance.centos-7.*.public_ip, count.index)}"
-      agent = "true"
-    }
+    #connection {
+    #  type  = "ssh"
+    #  user  = "centos"
+    #  #host = "${join(",", aws_instance.centos-7[count.index].id)}"
+    #  host  = self.public_ip
+    #  #host  = "${element(aws_instance.centos-7.*.public_ip, count.index)}"
+    #  agent = "true"
+    #}
     inline = [
      "sudo yum install -y yum-utils",
      "sudo yum-config-manager  --add-repo  https://download.docker.com/linux/centos/docker-ce.repo",
