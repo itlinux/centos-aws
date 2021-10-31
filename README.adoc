@@ -21,3 +21,41 @@ aws_secret_access_key = "XXXXXXXXXXXX"
 
 == Use the terraform.tfvars.example
 This file will need to contain your info which sets the variables. Just copy it to terraform.tfvars and update the options. 
+
+== Download the state
+----
+terraform state pull >tfstate
+----
+
+Once you downloaded you will need to look for the private key and remote all the \n to a new line 
+.Example look of final ssh private key
+----
+-----BEGIN RSA PRIVATE KEY-----
+RxxanwIBAAKCAQEAtmeIAbnu5OT7OQcmvAqYvZyrSWLg8tBclFOmDBefGBP6UMCK
+xQwOH8Rxqxukifu3V7+di6ANqJX50crX/4GIpyEUs0RUE22uD//U3HyWq/aZAxTU
+NUBGx6l/hcTefCLBHjaDUaeniCIs1VChTShN1BWjMISH8AVDenHvD7XXIN2tCvIP
+2bcn3hB4moMVhWt1kt+ftI718iQBuTcv5+2TdQwogFW8SPHyHmKcctXWEv7mCj2b
+KWnKVR0EB33FME5tYg36P3b6eUaHipvmVm4/98gPIDYYFAMqeERBmJ1m5JRih8mk
+9bj6uJ5Mp/g5vRZdmfpf4t3km0NhzDYSs0ubVQIDAQABAoIBADyB45APCbxMaTnl
+sWe3bCuaCQfzEQP7MnrRtMdWHqRyHBslg+MRuK25EKveI5rSMWOeYLisg1tlRNXf
+H//WDGrEgoVlKS64t4D/MLFjcufgiamIA00W4WPiSjcps1Qig0Vud+liYCS8kXrB
+oIBj2k18UAIMNLveQyAfI1pmy9JOp3BuToS+5k5DsVGvETC4myE3BLOUnCLoX48S
+tl6mZcF+9RkU1gCL6r+JKXmXj8WrSWrCr44PkCSYW5MJI4cIERtQO7E9KrgWklF4
+XLfBty0RAwBtRJM3MXFwCfJnbnADN7z/EQuyxXS5uf1bT046/EAW4KicMYjkfXN4
+tQxRBIECgYEA1CSNtReLYQRYKs3c54cx4vIcT2Gl6vgrKXIoLHofc2MMJO7RbwYA
+rF+Fhqvx16DcCcc0hCQZ2Xlfczn4O1810sf0KE564tr/GRUOda0xkd2jgPNGJV/E
+fKkTvlr5Jsidy0zsa5zQ4Z/JTJ+x+zExIkX7tjZMnDKqbA9yFyH/DW0CgYEA3B0a
+pu8K6SCJuY2HGwNunIuKrKkXfShck/xsEfep/kCTXayf9idFW6eMk12m+wo9b88F
+k70FWi1EsxmtZ1YF5xpkKK+k3BEBLIQHRHpXfmbqwqFe3JuE2nRoAZZFhKY8Tgfd
+3AFkn1gNfZ4LN7LSaKa3Y3NsMC9wVI3rrwO7nIkCgYEAintWGdnFvU4Vs9NwmZ7S
+POBpBJSst2bK3iJMAUSzFSKaAd33zy6u79bnFhNWKrkyChwEtyHN0f3+BfzYgwFS
+5EZspocchswIbDonlz+4tQxmuD2WE72hSPMiFUfTjrK09so/JrxWSoKA6Ejy6ROi
+jEn812Q4vFoCj8nBY0Jo+T0CgYA7PUH9B3yiPXWTkLl51bShQRTzXxbJQmGYGmlj
+dIo1uV9v6JOshekuv6sfxia4jYr3WnofxtF38ZL5uMFofEheaEXohU0TRShRuL7T
++TEu/bfU5eVH7jsVKBsNwkm3Z533Sjq1iVJxaBtJYY2XUfM64xOcGmZVmY7b0s5J
+bfHCMQKBgBbDgmUvjJd/zPsgyavv1V3tc3+j8ys3iLnbO5zBo785lReHyCWEy1Tq
+25uBCVuBB90m+7xyva79yRj6ReAjejUu2T5eR9ZynB5ACMKrMgu84zPODf68/hoV
+TZRX/iqiOphBwhpyTx9VjtwB3rLA7tb+mCxLkJW++lZal5O1zoNI
+-----END RSA PRIVATE KEY-----
+----
+
