@@ -37,6 +37,10 @@ variable "profile" {
 variable "owner" {
   description = "owner"
 }
-variable "ssh_key"{
+variable "ssh_key" {
   description = "your ssh key to use"
 }
+variable "vm_count" {
+  description = "number of VM you want to have"
+}
+

@@ -1,5 +1,5 @@
 resource "aws_instance" "centos-7-newbox" {
-  count                       = 2
+  count                       = var.vm_count
   ami                         = var.ami-image
   associate_public_ip_address = var.public_ip
   vpc_security_group_ids = ["${aws_security_group.remo_sg.id}"]
