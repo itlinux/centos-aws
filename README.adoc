@@ -63,3 +63,4 @@ TZRX/iqiOphBwhpyTx9VjtwB3rLA7tb+mCxLkJW++lZal5O1zoNI
 
 === Triggers
 Trigger 1
+Test 1
