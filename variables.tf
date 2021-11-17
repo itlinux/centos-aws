@@ -42,6 +42,6 @@ variable "ssh_key" {
 }
 variable "vm_count" {
   description = "number of VM you want to have, from x to y number"
-  default     = "1"
+  default     = "2"
 }
 
