@@ -1,3 +1,4 @@
+#
 variable "vm_name" {
   description = "Machine Name"
 }
