@@ -1,4 +1,3 @@
-# hello
 resource "aws_instance" "centos-7-newbox" {
   count                       = var.vm_count
   ami                         = var.ami-image
